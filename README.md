@@ -2,7 +2,7 @@
 
 <hr>
 
-<p align="center"><small>The player will respawn 7 seconds after their death.
+<p align="center"><small>The player will respawn 9 seconds after their death.
 <p align="center"><small>Smooth fading transition.
   
 <br>
