@@ -51,11 +51,13 @@ elseif SERVER then
     end)
 
     hook.Add("PlayerDeathSound", "DeathSoundDisable", function (ply)
+        -- Plays Mario
         ply:EmitSound("death_sound.wav")
         return true 
     end) 
 
     hook.Add("PlayerDeath", "Death", function(vic, wea, att) 
+        -- Auto respawn after 9 seconds
         timer.Simple(9, function()
             if (vic:Alive()) then return end
             vic:Spawn()
